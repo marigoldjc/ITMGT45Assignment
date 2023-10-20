@@ -30,7 +30,7 @@ print("Your take-home pay per month is", takehome)
 
 # ##### Material Waste
 
-# In[6]:
+# In[2]:
 
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
@@ -38,7 +38,7 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     return waste_set_jobs
 
 
-# In[8]:
+# In[3]:
 
 
 total_material = int(input("Enter the total amount of material available: "))
@@ -51,12 +51,12 @@ job_consumption = int(input("Enter the amount of material consumed per job: "))
 
 waste = material_waste(total_material, material_units, num_jobs, job_consumption)
 
-print(waste, material_units)
+print(waste, material_units, sep='')
 
 
 # ##### Interest
 
-# In[3]:
+# In[5]:
 
 
 def interest(principal, rate, periods):
@@ -64,7 +64,7 @@ def interest(principal, rate, periods):
     return int(final_value)
 
 
-# In[14]:
+# In[7]:
 
 
 principal = float(input("Enter amount invested: "))
@@ -75,7 +75,7 @@ periods = int(input("Enter number of years invested: "))
 
 final = interest(principal, rate, periods)
 
-print("The final value of the investment after", periods, "years is", final, ".")
+print("The final value of the investment after", periods, "years is", final)
 
 
 # ##### Body Mass Index
