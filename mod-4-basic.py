@@ -35,7 +35,7 @@ print("Your take-home pay per month is", takehome)
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
     waste_set_jobs = total_material - (job_consumption * num_jobs)
-    return waste_set_jobs
+    return str(waste_set_jobs)
 
 
 # In[3]:
