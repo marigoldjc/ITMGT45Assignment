@@ -34,12 +34,12 @@ else:
     print(lettershift)
 
 
-# ##### Ceasar Cipher
+# ##### Caesar Cipher
 
 # In[48]:
 
 
-def ceasar_cipher(message, shift):
+def caesar_cipher(message, shift):
     result = "" 
     for char in message: 
         if char.isalpha(): 
@@ -58,8 +58,8 @@ def ceasar_cipher(message, shift):
 message = str(input("String of uppercase English letters and spaces: "))
 shift = int(input("Number of shifts: "))
 
-ceasar = ceasar_cipher(message, shift)
-print(ceasar)
+caesar = caesar_cipher(message, shift)
+print(caesar)
 
 
 # ##### Shift By Letter
@@ -119,6 +119,8 @@ def vigenere_cipher(message, key):
 
 message = str(input("Message: "))
 key = str(input("Key: "))
-vigenere = vigenere_cipher(message, key)
-print(vigenere)
-
+try:
+    vigenere = vigenere_cipher(message, key)
+    print(vigenere)
+except IndexError:
+    print("Index out of range")
